@@ -64,7 +64,7 @@ public class Main {
 	public static void addBillboard() {
 		System.out.println("Please enter the information of the billboard separed by ++. For example: \n 200++300++true++Mister Wings. ");
 		String info = lector.nextLine();
-		String[] data = info.split("++");
+		String[] data = info.split("\\+\\+");
 		int height = Integer.parseInt(data[0]);
 		int width = Integer.parseInt(data[1]);
 		boolean using = Boolean.parseBoolean(data[2]);
